@@ -40,7 +40,7 @@ module.exports = function(params) {
 					_.range(maximum).map(() => {
 						var tmpAccount = randomUtil.account();
 						var transaction = lisk.transaction.transfer({
-							amount: 2500000000,
+							amount: 500000000,
 							passphrase: accountFixtures.genesis.passphrase,
 							recipientId: tmpAccount.address,
 						});

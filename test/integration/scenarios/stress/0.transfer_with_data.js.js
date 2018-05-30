@@ -38,7 +38,7 @@ module.exports = function(params) {
 				return Promise.all(
 					_.range(maximum).map(() => {
 						var transaction = lisk.transaction.transfer({
-							amount: randomUtil.number(100000000, 1000000000),
+							amount: 500000000,
 							passphrase: accountFixtures.genesis.passphrase,
 							recipientId: randomUtil.account().address,
 							data: randomUtil.dataField(64),
